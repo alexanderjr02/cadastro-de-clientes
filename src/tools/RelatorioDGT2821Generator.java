@@ -31,7 +31,15 @@ public class RelatorioDGT2821Generator {
         sb.append("4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj\n");
         // 5: Contents
         StringBuilder content = new StringBuilder();
-        content.append("BT\n/F1 12 Tf\n16 TL\n50 800 Td\n");
+        content.append("BT\n");
+        // Title
+        content.append("/F1 18 Tf\n20 TL\n50 800 Td\n");
+        content.append("(").append(escapePdf("Universidade Estacio do Gama")).append(") Tj\n");
+        content.append("T*\n");
+        content.append("(").append(escapePdf("Relatorio de Pratica - DGT2821 Programacao Back-end com Java")).append(") Tj\n");
+        content.append("T*\n");
+        // Body
+        content.append("/F1 12 Tf\n16 TL\n");
         for (int i = 0; i < lines.size(); i++) {
             String ln = escapePdf(lines.get(i));
             content.append("(").append(ln).append(") Tj\n");
@@ -59,27 +67,32 @@ public class RelatorioDGT2821Generator {
 
     public static void main(String[] args) throws IOException {
         List<String> lines = new ArrayList<>();
-        lines.add("Universidade X - Relatório de Prática");
+        lines.add("Campus: Estacio do Gama");
         lines.add("Curso: Back-end com Java (DGT2821)");
+        lines.add("Disciplina: Programacao Back-end com Java");
         lines.add("Projeto: CadastroPOO");
-        lines.add("Repositório: https://github.com/alexanderjr02/cadastro-de-clientes");
+        lines.add("Repositorio: https://github.com/alexanderjr02/cadastro-de-clientes");
         lines.add("");
-        lines.add("Objetivo: Implementar cadastro de clientes em modo texto");
-        lines.add("com POO (herança e polimorfismo) e persistência binária.");
+        lines.add("Objetivo da pratica:");
+        lines.add("- Implementar cadastro de clientes em modo texto");
+        lines.add("- Utilizar POO (heranca e polimorfismo)");
+        lines.add("- Persistencia de objetos em arquivos binarios");
         lines.add("");
-        lines.add("Códigos principais: Pessoa, PessoaFisica, PessoaJuridica,");
-        lines.add("repositórios (persistir/recuperar) e CLI (CadastroPOO).");
+        lines.add("Codigos principais:");
+        lines.add("- Pessoa, PessoaFisica, PessoaJuridica");
+        lines.add("- Repositorios (persistir/recuperar)");
+        lines.add("- CLI (CadastroPOO) com menu completo");
         lines.add("");
-        lines.add("Resultados: Menu funcional; operações incluir/alterar/excluir;");
-        lines.add("obter por id, listar, salvar e recuperar com exceções tratadas.");
+        lines.add("Resultados:");
+        lines.add("- Menu funcional; incluir/alterar/excluir/obter/listar");
+        lines.add("- Salvar e recuperar com tratamento de excecoes");
         lines.add("");
-        lines.add("Análise:");
-        lines.add("- Vantagens/Desvantagens da herança: reaproveitamento vs acoplamento.");
-        lines.add("- Serializable: necessário para ObjectOutputStream/ObjectInputStream.");
-        lines.add("- Streams: paradigma funcional (map/filter/forEach) para listas.");
-        lines.add("- Padrão em arquivos: repositório + serialização de objetos.");
-        lines.add("- Elementos estáticos: main é estático para invocação sem instância.");
-        lines.add("- Scanner: entrada de dados via teclado.");
+        lines.add("Analise e conclusao:");
+        lines.add("- Heranca: reaproveitamento vs acoplamento");
+        lines.add("- Serializable: necessario para ObjectOutputStream/ObjectInputStream");
+        lines.add("- Streams: paradigma funcional (forEach/map/filter) em listas");
+        lines.add("- Padrao de arquivos: repositorio + serializacao de objetos");
+        lines.add("- Main estatico: invocacao sem instancia; Scanner para entrada");
 
         byte[] pdf = buildPdf(lines);
         File outDir = new File("docs");
@@ -90,4 +103,3 @@ public class RelatorioDGT2821Generator {
         System.out.println("Relatório gerado em docs/Relatorio-Pratica-DGT2821.pdf");
     }
 }
-

@@ -3,53 +3,69 @@
 2 0 obj << /Type /Pages /Count 1 /Kids [3 0 R] >> endobj
 3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >> endobj
 4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
-5 0 obj << /Length 1187 >>
+5 0 obj << /Length 1286 >>
 stream
 BT
+/F1 18 Tf
+20 TL
+50 800 Td
+(Universidade Estacio do Gama) Tj
+T*
+(Relatorio de Pratica - DGT2821 Programacao Back-end com Java) Tj
+T*
 /F1 12 Tf
 16 TL
-50 800 Td
-(Universidade X - RelatÃ³rio de PrÃ¡tica) Tj
+(Campus: Estacio do Gama) Tj
 T*
 (Curso: Back-end com Java \(DGT2821\)) Tj
 T*
+(Disciplina: Programacao Back-end com Java) Tj
+T*
 (Projeto: CadastroPOO) Tj
 T*
-(RepositÃ³rio: https://github.com/alexanderjr02/cadastro-de-clientes) Tj
+(Repositorio: https://github.com/alexanderjr02/cadastro-de-clientes) Tj
 T*
 () Tj
 T*
-(Objetivo: Implementar cadastro de clientes em modo texto) Tj
+(Objetivo da pratica:) Tj
 T*
-(com POO \(heranÃ§a e polimorfismo\) e persistÃªncia binÃ¡ria.) Tj
+(- Implementar cadastro de clientes em modo texto) Tj
 T*
-() Tj
+(- Utilizar POO \(heranca e polimorfismo\)) Tj
 T*
-(CÃ³digos principais: Pessoa, PessoaFisica, PessoaJuridica,) Tj
-T*
-(repositÃ³rios \(persistir/recuperar\) e CLI \(CadastroPOO\).) Tj
+(- Persistencia de objetos em arquivos binarios) Tj
 T*
 () Tj
 T*
-(Resultados: Menu funcional; operaÃ§Ãµes incluir/alterar/excluir;) Tj
+(Codigos principais:) Tj
 T*
-(obter por id, listar, salvar e recuperar com exceÃ§Ãµes tratadas.) Tj
+(- Pessoa, PessoaFisica, PessoaJuridica) Tj
+T*
+(- Repositorios \(persistir/recuperar\)) Tj
+T*
+(- CLI \(CadastroPOO\) com menu completo) Tj
 T*
 () Tj
 T*
-(AnÃ¡lise:) Tj
+(Resultados:) Tj
 T*
-(- Vantagens/Desvantagens da heranÃ§a: reaproveitamento vs acoplamento.) Tj
+(- Menu funcional; incluir/alterar/excluir/obter/listar) Tj
 T*
-(- Serializable: necessÃ¡rio para ObjectOutputStream/ObjectInputStream.) Tj
+(- Salvar e recuperar com tratamento de excecoes) Tj
 T*
-(- Streams: paradigma funcional \(map/filter/forEach\) para listas.) Tj
+() Tj
 T*
-(- PadrÃ£o em arquivos: repositÃ³rio + serializaÃ§Ã£o de objetos.) Tj
+(Analise e conclusao:) Tj
 T*
-(- Elementos estÃ¡ticos: main Ã© estÃ¡tico para invocaÃ§Ã£o sem instÃ¢ncia.) Tj
+(- Heranca: reaproveitamento vs acoplamento) Tj
 T*
-(- Scanner: entrada de dados via teclado.) Tj
+(- Serializable: necessario para ObjectOutputStream/ObjectInputStream) Tj
+T*
+(- Streams: paradigma funcional \(forEach/map/filter\) em listas) Tj
+T*
+(- Padrao de arquivos: repositorio + serializacao de objetos) Tj
+T*
+(- Main estatico: invocacao sem instancia; Scanner para entrada) Tj
 ET
 endstream
 endobj
@@ -63,5 +79,5 @@ xref
 0000000311 00000 n 
 trailer << /Size 6 /Root 1 0 R >>
 startxref
-1499
+1648
 %%EOF
